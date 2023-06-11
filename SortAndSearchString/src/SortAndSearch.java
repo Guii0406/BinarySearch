@@ -3,19 +3,19 @@ public class SortAndSearch {
     //binary search
     public static int BinarySearch(String elementToFind, String[] vetor){
         SortStrings(vetor);
-        int l = 0;
-        int r = vetor.length - 1;
-        while(l <= r){
-            int m = (l + r) / 2;
+        int p = 0;
+        int u = vetor.length - 1;
+        while(p <= u){
+            int m = (p + u) / 2;
             int c = elementToFind.compareTo(vetor[m]);
 
 
             if(c == 0){
                 return m;
             }else if(c < 0){
-                r = m - 1;
+                u = m - 1;
             }else{
-                l = m + 1;
+                p = m + 1;
 
             }
         }

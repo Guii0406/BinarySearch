@@ -13,7 +13,7 @@ public class App {
         System.out.println(ShowArray(vetor));
 
         // ordenar e buscar valores
-        int resultExistente = SortAndSearch.BinarySearch("zafira", vetor); //valor existente
+        int resultExistente = SortAndSearch.BinarySearch("carlos", vetor); //valor existente
         int resultNaoExistente = SortAndSearch.BinarySearch("paulo", vetor); //valor não existente
         
         //mostrar array ordenado
